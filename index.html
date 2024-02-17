@@ -3,11 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5a1a5b242f.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./CSS/style.css">
     <title>ADA COMICS</title>
 </head>
-<body>
+<body class="flex-wrap w-full h-full">
+    <header>
+        <nav>
+            <div class="h-auto bg-black flex justify-center">
+                <h1 class="w-fit bg-red-600 text-white text-4xl">ADA COMICS</h1>
+            </div>
+        </nav>    
+        <div>
+            <img class="w-full bg-cover bg-center brightness-50 contrast-60 " src="./Imagenes/hero.jpg" alt="">
+        </div>
+    </header>    
+    <main class="w-full mx-5">
+       <h2 class="text-2xl lg:text-3xl font-semibold mt-20">Búsqueda</h2> 
+       <div class="w-4/5 p-3 underline">
+       <i class="fa-solid fa-magnifying-glass"></i><input class="" type="search" placeholder="Ingresá tu búsqueda" name="" id="">
+       </div>
+       <div class="">
+        <label class="text-sm font-bold text-gray-500" for="">TIPO</label>
+        <select class="font-bold pl-5" name="" id="">
+          <option value="">COMICS</option>
+          <option value="">PERSONAJES</option>
+        </select>
+                
+         <label class="text-sm font-bold text-gray-500 pl-5" for="">ORDEN</label>
+         <select class="font-bold pl-5" name="" id="">
+           <option value="">A-Z</option>
+           <option value="">Z-A</option>
+           <option value="">Más nuevos</option>
+           <option value="">Más viejos</option>
+         </select>
+         <button class="bg-black text-white p-2">BUSCAR</button>
+         </div>
+         <div>
+            <h2 class="text-2xl lg:text-3xl font-semibold mb-10">Resultados</h2> 
+         </div>
 
+         <div class="h-12 my-10 flex justify-center">
+            <button class="bg-black p-3 mx-2 rounded"><i class="text-2xl font-bold fa-solid fa-angles-left" style="color: #58667e;"></i></button>
+            <button class="bg-black p-3 mx-2 rounded"><i class="text-2xl font-bold fa-solid fa-angle-left" style="color: #58667e;"></i></button>
+            <button class="bg-black p-3 mx-2 rounded"><i class="text-2xl font-bold fa-solid fa-solid fa-angle-right" style="color: #58667e;"></i></button>
+            <button class="bg-black p-3 mx-2 rounded"><i class="text-2xl font-bold fa-solid fa-solid fa-angles-right" style="color: #58667e;"></i></button>
+         </div>
 
+    </main>
+    <footer class="bg-black flex-wrap"> 
+        <div class="h-32 text-lg lg:text-xl flex justify-center items-center">
+            <p class="text-white">Hecho con <i class="fa-solid fa-heart" style="color: #dd0303;"></i> por Karina Boock</p>
+        </div>                
+    </footer>
 
 <script src="main.js"></script>    
 </body>
